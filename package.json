@@ -1,0 +1,24 @@
+{
+  "name": "brokerse",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "web:dev": "yarn workspace @brokerse/web dev",
+    "back:dev": "yarn workspace @brokerse/back start"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "devDependencies": {
+    "@brokerse/eslint-config": "*",
+    "@types/jest": "^26.0.5",
+    "jest": "^26.1.0",
+    "ts-jest": "^26.1.3",
+    "typescript": "^3.9.7"
+  }
+}
